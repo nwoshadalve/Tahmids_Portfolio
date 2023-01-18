@@ -30,12 +30,12 @@ const NavMobile = () => {
         {/* Hamburger & Button*/}
         <div className='flex items-center gap-2'>
             <Link to="/">
-            <img onClick={open} className='w-[41px] h-[37px] object-contain
+            <img onClick={open} className='min-w-[41px] h-[37px] select-none
             hamBargur p-3 rounded-[10px] cursor-pointer' 
             src={Hambarger} alt="hamLogo" />
             </Link>
 
-            <div className='headerButtonMobile flex items-center gap-1 select-none'
+            <div className='sm:hidden headerButtonMobile items-center gap-1 select-none'
             onClick={()=>{
                 navigate("/contact");
             }}
@@ -49,7 +49,7 @@ const NavMobile = () => {
         </div>
         {/* transparent section */}
         
-        <div className={`flex fixed bg-[#2521EB]/60 ${hamwitdh} h-[100vh] top-0
+        <div className={`flex fixed bg-[#000000]/90 ${hamwitdh} h-[100vh] top-0
         text-white justify-center items-center text-center text-[40px] tracking-[1px]
         overflow-hidden origin-left duration-500`}>
             <MdClose onClick={close} className='absolute top-5 right-5 cursor-pointer'/>

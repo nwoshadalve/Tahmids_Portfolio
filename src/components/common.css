@@ -12,6 +12,7 @@
     cursor: pointer;
 }
 .headerButtonMobile{
+    display: flex;
     background: linear-gradient(90deg, #2E2AEB 0%, #4945FF 100%);
     min-width: 155.69px;
     max-width: 160.69px;
@@ -21,6 +22,7 @@
     border-radius: 20px;
     cursor: pointer;
 }
+
 .hamBargur{
     background: linear-gradient(90deg, #2521EB 0%, #4945FF 100%);
 }
@@ -31,9 +33,10 @@
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0.9) 100%, rgba(255,255,255,0.38139005602240894) 100%);
     border-bottom: 1px solid rgba(0,0,0,0.26);
-    -webkit-box-shadow:0px 5px 10px rgba(255,255,255,0.9) 100%;
-    -moz-box-shadow:0px 5px 10px rgba(255,255,255,0.9) 100%;
-    box-shadow:0px 5px 10px rgba(255,255,255,0.9) 100%;    
+    -webkit-box-shadow:1px 1px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:1px 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;   
 
 }
 
@@ -51,45 +54,427 @@
 
 
 /* Header icons & Images */
-
-.theUser{
-    height: 12.5rem;
-    bottom: 0;
-    right: 2.8rem;
-}
 .settingBody{
-    top: 11.6rem;
-    left: 6.8rem;
+    height: 60px;
+    width: 60px;
+    top: 9.6rem;
+    left: 4.0rem;
 }
 .settingsIcon{
-    top: 12.2rem;
-    left: 8.1rem;
+    top: 10.2rem;
+    left: 5.2rem;
 }
 .aAIcon{
-    height: 5.5rem;
-    top: 11.3rem;
-    left: 11.6rem;
+    height: 60px;
+    top: 9.8rem;
+    left: 8.6rem;
 }
 .galleryIcon{
-    height: 6rem;
-    top: 3rem;
-    left: 3.5rem;
+    height: 80px;
+    top: 2rem;
+    left: 2.5rem;
 }
 .colorIcon{
-    height: 4rem;
-    top: 5rem;
-    left: 12rem
+    height: 60px;
+    top: 3.5rem;
+    left: 9rem
 }
 .arrowIcon{
-    height: 1.5rem;
-    top: 6.5rem;
-    right: 11rem;
+    height: 20px;
+    top: 5.5rem;
+    right: 9rem;
 }
 .selectorIcon{
-    height: 8rem;
-    top: 1.5rem;
-    right: 4.5rem;
+    height: 6rem;
+    top: 0.4rem;
+    right: 3.5rem;
 }
-
-/* Main Section start Here */
+/*fixing for low end devices viewport */
+@media (max-width: 370px){
+    .headerButtonMobile{
+        display: none;
+    }
+}
+@media (max-width: 330px){
+    .theUser{
+        height: 160px;
+        bottom: 0;
+        right: 1rem;
+    }
+    .carpet{
+        width: 160px;
+        bottom: 0;
+        left: 2.8rem;
+    }
+    .settingBody{
+        height: 50px;
+        width: 50px;
+        top: 7rem;
+        left: 3.2rem;
+    }
+    .settingsIcon{
+        top: 7.3rem;
+        left: 4rem;
+    }
+    .aAIcon{
+        height: 50px;
+        top: 7.3rem;
+        left: 7rem;
+    }
+    .galleryIcon{
+        height: 60px;
+        top: 1rem;
+        left: 2rem;
+    }
+    .colorIcon{
+        height: 40px;
+        top: 3.0rem;
+        left: 7.5rem
+    }
+    .arrowIcon{
+        height: 15px;
+        top: 5.5rem;
+        right: 8.5rem;
+    }
+    .selectorIcon{
+        height: 5rem;
+        top: 0.4rem;
+        right: 2.5rem;
+    }
+}
+@media only screen and (max-width: 345px) and (min-width: 331px){
+    .theUser{
+        height: 160px;
+        bottom: 0;
+        right: 1rem;
+    }
+    .carpet{
+        width: 160px;
+        bottom: 0;
+        left: 2.8rem;
+    }
+    .settingBody{
+        height: 50px;
+        width: 50px;
+        top: 7.5rem;
+        left: 3.2rem;
+    }
+    .settingsIcon{
+        top: 7.8rem;
+        left: 4rem;
+    }
+    .aAIcon{
+        height: 50px;
+        top: 7.8rem;
+        left: 7rem;
+    }
+    .galleryIcon{
+        height: 60px;
+        top: 1rem;
+        left: 2rem;
+    }
+    .colorIcon{
+        height: 40px;
+        top: 3.0rem;
+        left: 7.8rem
+    }
+    .arrowIcon{
+        height: 15px;
+        top: 5.5rem;
+        right: 8.5rem;
+    }
+    .selectorIcon{
+        height: 5rem;
+        top: 0.4rem;
+        right: 2.8rem;
+    }
+}
+@media only screen and (max-width: 360px) and (min-width: 346px){
+    .theUser{
+        height: 160px;
+        bottom: 0;
+        right: 1rem;
+    }
+    .carpet{
+        width: 160px;
+        bottom: 0;
+        left: 2.8rem;
+    }
+    .settingBody{
+        height: 50px;
+        width: 50px;
+        top: 8.2rem;
+        left: 3.2rem;
+    }
+    .settingsIcon{
+        top: 8.5rem;
+        left: 4rem;
+    }
+    .aAIcon{
+        height: 50px;
+        top: 8.5rem;
+        left: 7rem;
+    }
+    .galleryIcon{
+        height: 60px;
+        top: 1rem;
+        left: 2rem;
+    }
+    .colorIcon{
+        height: 40px;
+        top: 3.0rem;
+        left: 7.8rem
+    }
+    .arrowIcon{
+        height: 15px;
+        top: 5.5rem;
+        right: 8.5rem;
+    }
+    .selectorIcon{
+        height: 5rem;
+        top: 0.4rem;
+        right: 2.8rem;
+    }
+}
+@media only screen and (max-width: 380px) and (min-width: 361px){
+    .theUser{
+        height: 165px;
+        bottom: 0;
+        right: 1rem;
+    }
+    .carpet{
+        width: 160px;
+        bottom: 0;
+        left: 2.8rem;
+    }
+    .settingBody{
+        height: 50px;
+        width: 50px;
+        top: 8.7rem;
+        left: 3.2rem;
+    }
+    .settingsIcon{
+        top: 9rem;
+        left: 4rem;
+    }
+    .aAIcon{
+        height: 50px;
+        top: 9rem;
+        left: 7rem;
+    }
+    .galleryIcon{
+        height: 60px;
+        top: 1.2rem;
+        left: 2.5rem;
+    }
+    .colorIcon{
+        height: 45px;
+        top: 3.2rem;
+        left: 8.9rem
+    }
+    .arrowIcon{
+        height: 20px;
+        top: 5.7rem;
+        right: 8.8rem;
+    }
+    .selectorIcon{
+        height: 5rem;
+        top: 0.6rem;
+        right: 3.0rem;
+    }
+}
+@media only screen and (max-width: 300px) and (min-width: 270px){
+    .theUser{
+        height: 120px;
+        bottom: 0;
+        right: 1rem;
+    }
+    .carpet{
+        width: 120px;
+        bottom: 0;
+        left: 2.8rem;
+    }
+    .settingBody{
+        height: 40px;
+        width: 40px;
+        top: 6.5rem;
+        left: 3.2rem;
+    }
+    .settingsIcon{
+        width: 20px;
+        height: 20px;
+        top: 6.7rem;
+        left: 3.9rem;
+    }
+    .aAIcon{
+        height: 40px;
+        top: 6.7rem;
+        left: 6.1rem;
+    }
+    .galleryIcon{
+        height: 50px;
+        top: 1rem;
+        left: 1.5rem;
+    }
+    .colorIcon{
+        height: 30px;
+        top: 3.0rem;
+        left: 6.8rem
+    }
+    .arrowIcon{
+        height: 15px;
+        top: 4rem;
+        right: 6.8rem;
+    }
+    .selectorIcon{
+        height: 5rem;
+        top: 0.4rem;
+        right: 2.3rem;
+    }
+}
+@media only screen and (max-width: 360px) and (min-width: 346px){
+    .theUser{
+        height: 160px;
+        bottom: 0;
+        right: 1rem;
+    }
+    .carpet{
+        width: 160px;
+        bottom: 0;
+        left: 2.8rem;
+    }
+    .settingBody{
+        height: 50px;
+        width: 50px;
+        top: 8.2rem;
+        left: 3.2rem;
+    }
+    .settingsIcon{
+        top: 8.5rem;
+        left: 4rem;
+    }
+    .aAIcon{
+        height: 50px;
+        top: 8.5rem;
+        left: 7rem;
+    }
+    .galleryIcon{
+        height: 60px;
+        top: 1rem;
+        left: 2rem;
+    }
+    .colorIcon{
+        height: 40px;
+        top: 3.0rem;
+        left: 7.8rem
+    }
+    .arrowIcon{
+        height: 15px;
+        top: 5.5rem;
+        right: 8.5rem;
+    }
+    .selectorIcon{
+        height: 5rem;
+        top: 0.4rem;
+        right: 2.8rem;
+    }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .theUser{
+        height: 220px;
+        bottom: -1.5rem;
+        right: 2.2rem;
+    }
+    .carpet{
+        width: 180px;
+        bottom: -1.3rem;
+        left: 6.0rem;
+    }
+    .settingBody{
+        height: 70px;
+        width: 70px;
+        top: 11.9rem;
+        left: 6.2rem;
+    }
+    .settingsIcon{
+        height: 35px;
+        width: auto;
+        top: 12.3rem;
+        left: 7.4rem;
+    }
+    .aAIcon{
+        height: 80px;
+        top: 12.2rem;
+        left: 12rem;
+    }
+    .galleryIcon{
+        height: 90px;
+        top: 1.7rem;
+        left: 3.5rem;
+    }
+    .colorIcon{
+        height: 60px;
+        top: 3.7rem;
+        left: 13.3rem
+    }
+    .arrowIcon{
+        height: 30px;
+        top: 7.7rem;
+        right: 12.8rem;
+    }
+    .selectorIcon{
+        height: 8rem;
+        top: 0.4rem;
+        right: 4.5rem;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .theUser{
+        height: 300px;
+        bottom: 0;
+        right: 3rem;
+    }
+    .carpet{
+        width: 220px;
+        bottom: 0.5rem;
+        left: 6.5rem;
+    }
+    .settingBody{
+        height: 70px;
+        width: 70px;
+        top: 17.0rem;
+        left: 7.2rem;
+    }
+    .settingsIcon{
+        height: 50x;
+        width: auto;
+        top: 17.3rem;
+        left: 8.3rem;
+    }
+    .aAIcon{
+        height: 80px;
+        top: 17.0rem;
+        left: 13.7rem;
+    }
+    .galleryIcon{
+        height: 120px;
+        top: 4rem;
+        left: 3.5rem;
+    }
+    .colorIcon{
+        height: 80px;
+        top: 5.5rem;
+        left: 15.9rem
+    }
+    .arrowIcon{
+        height: 30px;
+        top: 11.2rem;
+        right: 16.5rem;
+    }
+    .selectorIcon{
+        height: 10rem;
+        top: 1.6rem;
+        right: 5.5rem;
+    }
+}
 

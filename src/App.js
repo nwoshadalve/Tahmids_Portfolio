@@ -1,6 +1,6 @@
 // import { AnimatePresence } from 'framer-motion';
 import './components/common.css';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Nav from './components/nav/Nav';
 import NavMobile from './components/nav/NavMobile';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
@@ -19,7 +19,7 @@ function App() {
 
   const onScrollHandaler = () =>{
     if(window.scrollY>30){
-      setScrollNav("fixed onScrollNav");
+      setScrollNav("onScrollNav");
     }
     else if(window.scrollY<30){
       setScrollNav("");
@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className={`${scrollNav} w-full z-50 transition-all ease-in-out origin-right duration-500`}>
+        <div className={`fixed ${scrollNav} w-full z-50 transition-all ease-in-out origin-top duration-500`}>
           <Nav/>
           <NavMobile/>
         </div>
@@ -46,7 +46,7 @@ function App() {
           <Route path='/contact' element={<Contact/>} />
           <Route path='/blog' element={<Blog/>} />
           <Route path='*' element={<Nopage/>} />
-        </Routes>
+        </Routes>        
       </Router>
     </>
   );
