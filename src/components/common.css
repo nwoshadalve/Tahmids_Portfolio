@@ -11,6 +11,19 @@
     border-radius: 20px;
     cursor: pointer;
 }
+.headerButtonMobile{
+    background: linear-gradient(90deg, #2E2AEB 0%, #4945FF 100%);
+    min-width: 155.69px;
+    max-width: 160.69px;
+    height: 43.02px;
+    padding: 13.53px 18.05px;
+    box-shadow: 0px 8px 20px -7px rgba(46, 42, 235, 0.5);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.hamBargur{
+    background: linear-gradient(90deg, #2521EB 0%, #4945FF 100%);
+}
 
 /* On Scroll Changes */
 

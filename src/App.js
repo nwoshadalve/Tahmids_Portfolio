@@ -2,6 +2,7 @@
 import './components/common.css';
 import { useEffect, useState } from 'react';
 import Nav from './components/nav/Nav';
+import NavMobile from './components/nav/NavMobile';
 
 function App() {
   
@@ -24,43 +25,10 @@ function App() {
   
   return (
     <>
-      <div className={`fixed ${scrollNav} w-full z-50 transition-all ease-in-out duration-500`}>
+      <div className={`fixed ${scrollNav} w-full z-50 transition-all ease-in-out origin-right duration-500`}>
         <Nav/>
+        <NavMobile/>
       </div>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
-      <Nav/>
     </>
   );
 }
