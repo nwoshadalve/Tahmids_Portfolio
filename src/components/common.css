@@ -89,6 +89,15 @@
     top: 0.4rem;
     right: 3.5rem;
 }
+/* Services section */
+.cardEffect:hover{
+    box-shadow: -2px 31px 62px -9px rgba(186,199,16,0.2);
+    -webkit-box-shadow: -2px 31px 62px -9px rgba(186,199,16,0.2);
+    -moz-box-shadow: -2px 31px 62px -9px rgba(186,199,16,0.2);
+    cursor: pointer;
+    user-select: none;
+    transition: all ease-in 500ms;
+}
 /*fixing for low end devices viewport */
 @media (max-width: 370px){
     .headerButtonMobile{
@@ -331,6 +340,10 @@
         top: 0.4rem;
         right: 2.3rem;
     }
+    .serviceSecAnimFix{
+        height: 180px;
+        width: 180px;
+    }
 }
 @media only screen and (max-width: 360px) and (min-width: 346px){
     .theUser{
@@ -475,6 +488,18 @@
         height: 10rem;
         top: 1.6rem;
         right: 5.5rem;
+    }
+}
+@media only screen and (min-width: 390px) and (max-width:450px){
+    .serviceSecAnimFix{
+        height: 250px;
+        width: 250px;
+    }
+}
+@media only screen and (min-width: 451px) and (max-width:640px){
+    .serviceSecAnimFix{
+        height: 300px;
+        width: 300px;
     }
 }
 

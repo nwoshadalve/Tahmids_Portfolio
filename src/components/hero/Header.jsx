@@ -53,7 +53,7 @@ const Header = () => {
         </h2>
       </div>
       {/* Additioinal Images */}
-        <div className='w-full h-0 relative flex justify-around items-center'>
+        <div className='w-full h-0 relative flex justify-around items-center select-none'>
         <motion.img 
         animate={{
           y:[0,-3,0],
@@ -93,7 +93,7 @@ const Header = () => {
       lg:max-w-[811px] lg:h-[534px]
       md:max-w-[600px] md:max-h-[auto]
       my-[61px] lg:my-[20px] mx-[10px]
-      relative'>
+      relative select-none'>
         <img src={WebPage} alt="img" className='
         lg:w-[600px] lg:h-[auto]
         md:w-[500px] md:h-[auto]'/>
