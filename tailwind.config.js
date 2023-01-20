@@ -39,6 +39,7 @@ module.exports = {
       screens: {
         xxxsm:"280px",
         xxsm:"320px",
+        ism: "375px",
         xsm:"425px",
         sm: "640px",
         md: "768px",
@@ -50,7 +51,8 @@ module.exports = {
         headingColor: "#2e2e2e",
         headerTextColor: "#17141B",
         headerTextBlue: "#2E2AEB",
-        sectionsTittleBg:"#3B3B45",
+        tittleBgLight: "#F1F1FE",
+        tittleBgDark: "#3B3B45",
         servicesBG: "#26262C",
         serviceBorderColor:"#2E2E39",
         cardBorder: "#656575",

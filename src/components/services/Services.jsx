@@ -5,10 +5,10 @@ import GreenBallIcon from '../../images/services/green_ball.png';
 import OrangeBallIcon from '../../images/services/orange_ball.png';
 import SettingIcon from '../../images/services/setting_icon.png';
 import ClockIcon from '../../images/services/clock_icon.png';
-import ServicesTexts from './ServicesTexts';
+import HeadingTexts from '../common/HeadingTexts';
 
 
-const Services = () => {
+const Services = (props) => {
   return (
     <div className='w-full bg-servicesBG'>
         {/* Animated Round Circle */}
@@ -94,7 +94,7 @@ const Services = () => {
         
         <div className='w-full'>
           {/* Texts */}
-          <ServicesTexts/>
+          <HeadingTexts tittle={props.tittle} text={props.text} color={props.color} bg={props.bg}/>
           {/* Card Section */}
           <Cards/>
         </div>

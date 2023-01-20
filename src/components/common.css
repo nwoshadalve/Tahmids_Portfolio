@@ -98,6 +98,63 @@
     user-select: none;
     transition: all ease-in 500ms;
 }
+/* Portfolio Backgroud  */
+.portfolioBg{
+    background-image: url('../images/portfolio/portfolio-bg.png');
+    backdrop-filter: blur(32px);
+    background-size: 100% 100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+.activeMenu{
+    padding: 15px 25px;
+    background: linear-gradient(90deg, #2521EB 0%, #4945FF 100%);
+    box-shadow: 2px 6px 30px rgba(42, 38, 238, 0.25);
+    opacity: 1 !important;
+    color: white;
+    text-align: center;
+    transition: linear 500ms;
+}
+.borderHeight {
+    position: relative;
+  }
+  
+.borderHeight:after{
+    content: '';
+    height: 50%;
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    background-color: #0000001a;
+}
+.portfolioButton{
+    background: linear-gradient(90deg, #EE296A 0%, #FF3A7B 100%);
+    padding: 1rem 1.3rem;
+    gap: 10px;
+    box-shadow: 0px 10px 30px rgba(238, 41, 106, 0.5);
+    -webkit-box-shadow: 0px 10px 30px rgba(238, 41, 106, 0.5);
+    -moz-box-shadow: 0px 10px 30px rgba(238, 41, 106, 0.5);  
+    border-radius: 20px;
+    cursor: pointer;
+}
+.portfolioButtonMobile{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #EE296A 0%, #FF3A7B 100%);
+    min-width: 155.69px;
+    gap: 5px;
+    height: 43.02px;
+    padding: 13.53px 18.05px;
+    box-shadow: 0px 10px 30px rgba(238, 41, 106, 0.5);
+    -webkit-box-shadow: 0px 10px 30px rgba(238, 41, 106, 0.5);
+    -moz-box-shadow: 0px 10px 30px rgba(238, 41, 106, 0.5);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
 /*fixing for low end devices viewport */
 @media (max-width: 370px){
     .headerButtonMobile{
@@ -500,6 +557,16 @@
     .serviceSecAnimFix{
         height: 300px;
         width: 300px;
+    }
+}
+@media only screen and (min-width: 407px) and (max-width: 424px){
+    .fixGrow{
+        flex-grow: 0;
+    }
+}
+@media only screen and (min-width : 1024px) and (max-width: 1168px){
+    .fixPortfolioIcon{
+        left: 0;
     }
 }
 
