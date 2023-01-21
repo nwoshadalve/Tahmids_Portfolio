@@ -153,8 +153,22 @@
     border-radius: 20px;
     cursor: pointer;
 }
-
-
+/* process Section */
+.rightBtnBg{
+    background : linear-gradient(90deg, #2521EB 0%, #4945FF 100%);
+}
+.leftBtnBg{
+    background: #E4E3FF;
+}
+/* My skills section */
+.skillsBg{
+    background-image: url('../images/portfolio/portfolio-bg.png');
+    backdrop-filter: blur(32px);
+    background-size: 100% 100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
 /*fixing for low end devices viewport */
 @media (max-width: 370px){
     .headerButtonMobile{
