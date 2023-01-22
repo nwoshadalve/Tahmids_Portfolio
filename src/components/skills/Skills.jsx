@@ -35,7 +35,7 @@ const Skills = (props) => {
               md:left-[5vw] md:top-[-15vh]
               lg:top-[250px]
               ' />
-           <motion.img 
+          <motion.img 
           animate={{
           y:[0,-5,0],
           }}

@@ -7,7 +7,7 @@ const HeadingTexts = (props) => {
       {/* Intro Segment */}
       <div className='w-full flex justify-center items-center
        pb-2'>
-              <h3 className={`w-32 md:w-36 flex justify-center items-center
+              <h3 className={`w-32 ${(props.tittle === "Clinet Testimonials") ? "lg:w-48 md:w-40":"md:w-36"} flex justify-center items-center
                px-[0px] py-[6px] gap-1 
                font-noraml text-[12px] 
                xsm:text-[14px] md:text-[16px] lg:text-[18px]

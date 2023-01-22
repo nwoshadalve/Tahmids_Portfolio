@@ -196,12 +196,71 @@
     background-color: #F7B733;
     border-radius: 50px;
 }
+/* Testimonial section */
+.countdownBg{
+    background: #FFFFFF;
+    box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.15);
+}
+.countText{
+    background: linear-gradient(90deg, #2521EB 0%, #4945FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -text-fill-color: transparent;
+}
+.countName{
+    background: linear-gradient(133.77deg, #EE296A 0%, #2E2AEB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -text-fill-color: transparent;
+}
+.countDivider{
+    position: relative;
+}
+.countDivider:after{
+    content: '';
+    width: 50%;
+    height: 2px;
+    opacity: 0.4;
+    border-radius: 20px;
+    position: absolute;
+    left:50%;
+    bottom: 0;
+    background-color: #C6CDE0;
+    border-radius: 50px;
+    transform: translateX(-50%);
+}
+/* Slider dot button modification */
+.slick-dots{
+    position: unset!important;
+    padding: 20px 0!important;
+}
+.slick-dots li{
+    width: 8px!important;
+    height: 5px!important;
+    margin: 0 1px!important;
+    border-radius: 12px!important;
+    background: #D2D1F1!important;
+}
+.slick-dots li button:before{
+    display: hidden!important;
+    content: ''!important;
+}
+.slick-dots li.slick-active{
+    background: linear-gradient(90deg, #2521EB 0%, #4945FF 100%)!important;
+    width: 30px!important;
+}
 /*fixing for low end devices viewport */
 @media (max-width: 370px){
     .headerButtonMobile{
         display: none;
     }
 }
+/* Subscribe Secrtion */
+
 @media (max-width: 330px){
     .theUser{
         height: 160px;
@@ -627,4 +686,19 @@
         border-radius: 50px;
     }
 }
-
+@media (min-width: 768px){
+    .countDivider:after{
+        content: '';
+        width: 2px;
+        height: 50%;
+        opacity: 0.4;
+        border-radius: 20px;
+        position: absolute;
+        left: auto;
+        right:0;
+        bottom: 50%;
+        background-color: #C6CDE0;
+        border-radius: 50px;
+        transform: translateY(50%);
+    }
+}

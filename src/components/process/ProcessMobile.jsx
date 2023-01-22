@@ -81,10 +81,13 @@ const ProcessMobile = () => {
         slidesToShow={1}
         slidesToScroll={1}
         arrows = {false}
+        dots={false}
         autoplay={true}
-        autoplaySpeed={4000}
+        autoplaySpeed={5000}
         speed={1000}
         infinite={true}
+        rtl={true}
+        cssEase='ease-out'
         >
         {
                 ProcessData.map( (elem)=> {
@@ -103,7 +106,7 @@ const ProcessMobile = () => {
         </Slider>
         <div className='w-[250px] xsm:w-[283px] mx-auto h-4 select-none relative'>
             <div 
-            onClick={()=>isClickedPrev()}
+            onClick={()=>isClickedNext()}
             className={`nextSlideItems 
             h-[30px] w-[30px] ${liconBg}
             xsm:w-[40px] xsm:h-[40px]
@@ -115,7 +118,7 @@ const ProcessMobile = () => {
                 <BiChevronLeft className={`text-[30px] ${liconColor}`}/>
             </div>
             <div 
-            onClick={()=>isClickedNext()}
+            onClick={()=>isClickedPrev()}
             className={`prevSlideItems
             h-[30px] w-[30px] ${riconBg}
             xsm:w-[40px] xsm:h-[40px]

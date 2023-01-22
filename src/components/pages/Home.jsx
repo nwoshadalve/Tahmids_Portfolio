@@ -4,6 +4,8 @@ import Portfolio from '../portfolio/Portfolio';
 import Process from '../process/Process';
 import Services from '../services/Services';
 import Skills from '../skills/Skills';
+import Subscribe from '../subscribe/Subscribe';
+import Testimonials from '../testimonials/Testimonials';
 
 
 const Home = () => {
@@ -34,10 +36,16 @@ const Home = () => {
       bg:"bg-tittleBgDark"
     },
     testimonial:{
-      tittle:"Clinet Testimonilas",
+      tittle:"Clinet Testimonials",
       headText:"Kind Words From Beloved Clients",
-      color:"white",
-      bg:"bg-tittleBgDark"
+      color:"black",
+      bg:"bg-tittleBgLight"
+    },
+    subscribe:{
+      tittle:"Subscribe Newsletter",
+      headText:"Get latest updates and deals",
+      color:"whitw",
+      bg:"bg-tittleBgLight"
     }
   };
 
@@ -48,6 +56,8 @@ const Home = () => {
       <Portfolio tittle={hText.portfolio.tittle} text={hText.portfolio.headText} color={hText.portfolio.color} bg={hText.portfolio.bg}/>
       <Process tittle={hText.process.tittle} text={hText.process.headText} color={hText.process.color} bg={hText.process.bg}/>
       <Skills tittle={hText.skills.tittle} text={hText.skills.headText} color={hText.skills.color} bg={hText.skills.bg}/>
+      <Testimonials tittle={hText.testimonial.tittle} text={hText.testimonial.headText} color={hText.testimonial.color} bg={hText.testimonial.bg}/>
+      <Subscribe tittle={hText.subscribe.tittle} text={hText.subscribe.headText} color={hText.subscribe.color} bg={hText.subscribe.bg}/>
       <Header/>
     </div>
   )
