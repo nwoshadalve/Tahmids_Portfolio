@@ -162,12 +162,39 @@
 }
 /* My skills section */
 .skillsBg{
-    background-image: url('../images/portfolio/portfolio-bg.png');
-    backdrop-filter: blur(32px);
+    background-image: url('../images/skills/bg.png');
     background-size: 100% 100%;
-    background-position: center; /* Center the image */
+    background-position: top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+    background-size: 70vw;
+}
+.itemsBorderLeft {
+    position: relative;
+  }
+  
+.itemsBorderLeft:after{
+    content: '';
+    height: 55%;
+    width: 2px;
+    position: absolute;
+    left:-1.9px;
+    top: 37%;
+    background-color: #F7B733;
+    border-radius: 50px;
+}
+.itemsBorderLeft2 {
+    position: relative;
+  }
+  
+.itemsBorderLeft2:after{
+    content: '';
+    height: 55%;
+    width: 2px;
+    position: absolute;
+    right:-1.9px;
+    top: 37%;
+    background-color: #F7B733;
+    border-radius: 50px;
 }
 /*fixing for low end devices viewport */
 @media (max-width: 370px){
@@ -581,6 +608,23 @@
 @media only screen and (min-width : 1024px) and (max-width: 1168px){
     .fixPortfolioIcon{
         left: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .itemsBorderLeft2 {
+        position: relative;
+      }
+      
+    .itemsBorderLeft2:after{
+        content: '';
+        height: 55%;
+        width: 2px;
+        position: absolute;
+        left:-1.9px;
+        top: 37%;
+        background-color: #F7B733;
+        border-radius: 50px;
     }
 }
 

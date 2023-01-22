@@ -15,7 +15,7 @@ const Portfolio = (props) => {
   return (
     <div className='w-full portfolioBg ease-in-out duration-500 origin-top'>
        <div className='w-full h-auto pt-10 md:pt-14 lg:pt-20
-       pb-4 md:pb-8 ease-linear duration-500'>
+       pb-4 md:pb-8 origin-top duration-500'>
           <HeadingTexts tittle={props.tittle} text={props.text} color={props.color} bg={props.bg}/>
           {/* Icons */}
           <div className='w-full h-0 relative'>            
