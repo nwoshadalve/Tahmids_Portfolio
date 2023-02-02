@@ -11,6 +11,7 @@ import About from './components/pages/About.jsx';
 import Contact from './components/pages/Contact.jsx';
 import Blog from './components/pages/Blog.jsx';
 import Nopage from './components/pages/Nopage.jsx';
+import Footer from './components/footer/Footer';
 
 function App() {
   
@@ -46,7 +47,10 @@ function App() {
           <Route path='/contact' element={<Contact/>} />
           <Route path='/blog' element={<Blog/>} />
           <Route path='*' element={<Nopage/>} />
-        </Routes>        
+        </Routes>
+        <div className='w-full mt-[60px] lg:mt-[100px]'>
+          <Footer/>
+        </div>        
       </Router>
     </>
   );

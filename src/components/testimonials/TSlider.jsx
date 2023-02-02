@@ -42,9 +42,9 @@ const TSlider = () => {
                 top-[0px] right-[0px]'
                 />
             </div>
-            <p className='font-bold text-center'>{name}</p>
-            <p className='text-[14px] text-center text-[#737373]'>{desig}</p>
-            <div className='flex justify-center items-center py-2'>
+            <p className='text-[16px] leading-[15.47px] font-bold fontBold text-center'>{name}</p>
+            <p className='text-[14px] leading-[19.1px] fontRegular text-center text-[#737373]'>{desig}</p>
+            <div className='flex justify-center items-center pt-[10px] pb-[18.55px]'>
             <StarRatings
             rating={rtng}
             starRatedColor="#F7B733"
@@ -54,7 +54,8 @@ const TSlider = () => {
             starSpacing='2px'
             />
             </div>
-            <p className='w-[230px] xxsm:w-[70vw] md:w-[530px] mx-auto text-center'>
+            <p className='w-[230px] xxsm:w-[70vw] md:w-[530px] lg:w-[780px] mx-auto text-center
+            text-[16px] fontRegular font-normal lg:text-[24px] lg:leading-[32.74px]'>
                 {descrip}
             </p>
 

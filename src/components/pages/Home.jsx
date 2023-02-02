@@ -44,7 +44,7 @@ const Home = () => {
     subscribe:{
       tittle:"Subscribe Newsletter",
       headText:"Get latest updates and deals",
-      color:"whitw",
+      color:"white",
       bg:"bg-tittleBgLight"
     }
   };
@@ -58,7 +58,6 @@ const Home = () => {
       <Skills tittle={hText.skills.tittle} text={hText.skills.headText} color={hText.skills.color} bg={hText.skills.bg}/>
       <Testimonials tittle={hText.testimonial.tittle} text={hText.testimonial.headText} color={hText.testimonial.color} bg={hText.testimonial.bg}/>
       <Subscribe tittle={hText.subscribe.tittle} text={hText.subscribe.headText} color={hText.subscribe.color} bg={hText.subscribe.bg}/>
-      <Header/>
     </div>
   )
 }

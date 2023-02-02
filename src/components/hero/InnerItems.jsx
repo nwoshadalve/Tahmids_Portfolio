@@ -58,15 +58,12 @@ const InnerItems = () => {
 
         <motion.img 
         animate={{
-            rotate: [0, 0, 180, 180, 0],
-            borderRadius: ["0%", "0%", "50%", "50%", "0%"]
-          }}
+          y:[0,3,0]
+        }}
           transition={{
-            duration: 2,
+            duration: 4,
             ease: "linear",
-            times: [0, 0.2, 0.5, 0.8, 1],
             repeat: Infinity,
-            repeatDelay: 1
           }}
         className='absolute colorIcon' src={Colors} alt="colors" />
 

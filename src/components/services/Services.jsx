@@ -22,13 +22,14 @@ const Services = (props) => {
                   repeat: Infinity,
                   ease: "linear",
               }}
-            className='lg:h-[500px] lg:w-[500px]
-            md:h-[400px] md:w-[400px]
-            sm:h-[300px] sm:w-[300px]
+            className='lg:h-[650px] lg:w-[650px]
+            xl:h-[780px] xl:w-[780px]
+            md:h-[500px] md:w-[500px]
             h-[200px] w-[200px]
+            hidden md:block
             border-[2px] 
             border-[#2E2E39] rounded-[50%] absolute 
-            top-3 serviceSecAnimFix'
+            lg:top-3 md:top-[70px] serviceSecAnimFix'
             >
                 <img src={GreenBallIcon} alt="icon" 
                 className='lg:w-[18px] lg:h-[18px]
@@ -46,24 +47,25 @@ const Services = (props) => {
             </motion.div>
         </div>
         {/* Section's Contents */}
-        <div className=' w-full flex flex-col justify-center px-6 pt-7 pb-[60px]'>
+        <div className=' w-full flex flex-col justify-center px-6 py-[60px] md:py-[100px]'>
         
         <div className='w-full h-0 relative'>
         <motion.img 
         animate={{
-          y:[0,-5,0],
+          y:[-1,-8,-1],
         }}
         transition={{
           type: spring,
           stiffness:50,
-          duration:5,
+          duration:4,
           repeat: Infinity
         }}
            className='h-[30px] w-[30px]
           xsm:w-[40px] xsm:h-[40px] 
           sm:w-[45px] sm:h-[45px]
           md:w-[50px] md:h-[50px]
-          lg:w-[60px] lg:h-[60px] 
+          lg:w-[60px] lg:h-[60px]
+          xl:w-[74px] xl:h-[73px] 
           absolute
           top-[60px] left-[-20px]
           sm:left-[20px]
@@ -72,12 +74,12 @@ const Services = (props) => {
         <div className='w-full h-0 relative'>
         <motion.img 
         animate={{
-          y:[0,5,0],
+          y:[-2,7,-2],
         }}
         transition={{
           type: spring,
           stiffness:50,
-          duration:5,
+          duration:4.5,
           repeat: Infinity
         }} 
           className='h-[auto] w-[30px]
@@ -85,6 +87,7 @@ const Services = (props) => {
           sm:w-[45px]
           md:w-[50px]
           lg:w-[60px]
+          xl:w-[95px]
           absolute 
           right-[-20px] top-[28.1rem]
           xsm:right-0
