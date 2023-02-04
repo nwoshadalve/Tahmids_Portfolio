@@ -19,7 +19,7 @@ const HeadingTexts = (props) => {
             </div>
       <div className='w-full flex justify-center'>
       <p className={`${(props.tittle === "My Skills")?"w-[260px]":"w-[220px]"} 
-      ${(props.tittle === "My Skills")?"ism:w-[300px] xsm:w-[355px]":"xsm:w-[250px]"}
+      ${(props.tittle === "My Skills")?"ism:w-[300px] xsm:w-[360px]":"xsm:w-[250px]"}
       ${(props.tittle === "My Process")?"xsm:w-[360px]":"xsm:w-[250px]"}
       sm:w-[auto] md:w-[auto]
             text-center text-${props.color} fontBold

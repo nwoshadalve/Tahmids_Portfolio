@@ -16,9 +16,17 @@ const Portfolio = (props) => {
     <div className='w-full portfolioBg transition-all ease-linear duration-500'>
        <div className='w-full h-auto py-[60px] md:py-[100px]
        transition-[height] linear duration-500'>
-          <HeadingTexts tittle={props.tittle} text={props.text} color={props.color} bg={props.bg}/>
+          <div 
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          className='w-full'>
+            <HeadingTexts tittle={props.tittle} text={props.text} color={props.color} bg={props.bg}/>
+          </div>
           {/* Icons */}
-          <div className='w-full h-0 relative'>            
+          <div 
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          className='w-full h-0 relative'>            
           <motion.img 
           animate={{
             y:[-1,7,-1],

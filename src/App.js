@@ -12,6 +12,10 @@ import Contact from './components/pages/Contact.jsx';
 import Blog from './components/pages/Blog.jsx';
 import Nopage from './components/pages/Nopage.jsx';
 import Footer from './components/footer/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 function App() {
   

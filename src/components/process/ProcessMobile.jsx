@@ -38,9 +38,13 @@ const ProcessMobile = () => {
 
     return (
     <div className='w-full flex flex-col justify-center items-center select-none'>
-        <div className='w-[210px] xsm:w-[300px] sm:w-[400px] flex justify-center py-[30px] xsm:py-0 xsm:pt-[40px] md:pt-[60px] xsm:pb-[30px] md:pb-[40px] relative'>
+        <div 
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        className='w-[210px] xsm:w-[300px] sm:w-[400px] flex justify-center py-[30px] xsm:py-0 xsm:pt-[40px] md:pt-[60px] xsm:pb-[30px] md:pb-[40px] relative'>
             <img className='sm:w-[400px]' src={CenterImg} alt="img" />
-            <div className='flex items-center
+            <div
+            className='flex items-center
             absolute left-[-15px] top-[22px]
             xsm:left-[-13px] xsm:top-[33px]
             sm:left-[-10px] sm:top-[36px]
@@ -48,7 +52,8 @@ const ProcessMobile = () => {
             '>
                 <ProcessContent id={ProcessData[0].id} tittle={ProcessData[0].tittle} text={ProcessData[0].text} color={ProcessData[0].color}/>
             </div>
-            <div className='flex items-center
+            <div
+            className='flex items-center
             absolute left-[86px] top-[4px]
             xsm:left-[130px] xsm:top-[13px]
             sm:left-[180px] sm:top-[13px]
@@ -56,7 +61,8 @@ const ProcessMobile = () => {
             '>
                 <ProcessContent id={ProcessData[1].id} tittle={ProcessData[1].tittle} text={ProcessData[1].text} color={ProcessData[1].color}/>
             </div>
-            <div className='flex items-center
+            <div
+            className='flex items-center
             absolute right-[-30px] top-[55px]
             xsm:right-[-37px] xsm:top-[76px]
             sm:right-[-40px] sm:top-[92px]
@@ -64,7 +70,8 @@ const ProcessMobile = () => {
             '>
                 <ProcessContent id={ProcessData[2].id} tittle={ProcessData[2].tittle} text={ProcessData[2].text} color={ProcessData[2].color}/>
             </div>
-            <div className='flex items-center
+            <div
+            className='flex items-center
             absolute right-[10px] bottom-[21px]
             xsm:right-[21px] xsm:bottom-[21px]
             sm:right-[40px] sm:bottom-[25px]
@@ -72,7 +79,8 @@ const ProcessMobile = () => {
             '>
                 <ProcessContent id={ProcessData[3].id} tittle={ProcessData[3].tittle} text={ProcessData[3].text} color={ProcessData[3].color}/>
             </div>
-            <div className='flex items-center
+            <div
+            className='flex items-center
             absolute left-[-30px] bottom-[63px]
             xsm:left-[-35px] xsm:bottom-[80px]
             sm:left-[-40px] sm:bottom-[100px]
@@ -81,7 +89,10 @@ const ProcessMobile = () => {
             </div>
         </div>
             {/* slider */}
-        <div className='w-full pb-12'>
+        <div 
+        data-aos="zoom-in-up"
+        data-aos-duration="1500"
+        className='w-full pb-12'>
         <Slider
         ref={sliderRef}
         className='w-full flex justify-center items-center'

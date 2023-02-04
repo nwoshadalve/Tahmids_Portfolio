@@ -9,7 +9,10 @@ const Testimonials = (props) => {
   return (
     <div className='w-full'>
         {/* Achivements */}
-        <div className='w-full py-[60px] select-none relative'>
+        <div
+        data-aos="fade-right"
+        data-aos-duration="1200"
+        className='w-full py-[60px] select-none relative'>
             <div className='w-[80vw] lg:w-[80vw] xl:w-[1316px] md:w-[90vw] md:h-auto countdownBg
             flex flex-col md:flex-row mx-auto rounded-[15px]
             md:absolute md:top-[-50px] lg:top-[-100px] xl:top-[-110px] md:left-[50%] md:translate-x-[-50%]'>
@@ -17,7 +20,10 @@ const Testimonials = (props) => {
             </div>
         </div>
         {/* icons */}
-        <div className='w-full h-0 relative'>
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        className='w-full h-0 relative'>
           <motion.img 
           animate={{
           y:[1,-9,1],
@@ -33,12 +39,18 @@ const Testimonials = (props) => {
           right-[5vw] lg:right-[5vw] top-[260px] xsm:top-[280px] lg:top-[400px] xl:top-[380px] xl:right-[15vw]' />
         </div>
         {/* Section starts from here */}
-        <div className='w-full pt-[0px] md:pt-[91px]
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        className='w-full pt-[0px] md:pt-[91px]
         pb-[30px] md:pb-8 lg:pb-[44px] select-none'>
             <HeadingTexts tittle={props.tittle} text={props.text} color={props.color} bg={props.bg}/>
       </div>
       {/* Slider section */}
-      <div className='w-full'>
+      <div
+      data-aos="fade-right"
+      data-aos-duration="1500"
+      className='w-full'>
         <TSlider/>
       </div>
         

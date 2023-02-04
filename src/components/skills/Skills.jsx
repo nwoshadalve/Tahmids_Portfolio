@@ -11,11 +11,17 @@ import Icon2 from '../../images/skills/bg_icon2.png';
 const Skills = (props) => {
   return (
     <div className='w-full bg-servicesBG'>
-        <div className='w-full pt-[60px] lg:pt-[100px]
+        <div 
+        data-aos="fade-down"
+        data-aos-duration="1200"
+        className='w-full pt-[60px] lg:pt-[100px]
             pb-[60px] md:pb-0 select-none'>
             <HeadingTexts tittle={props.tittle} text={props.text} color={props.color} bg={props.bg}/>
             {/* Icons */}
-          <div className='w-full h-0 relative'>            
+          <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          className='w-full h-0 relative'>            
           <motion.img 
           animate={{
             y:[0,8,0],
@@ -28,9 +34,9 @@ const Skills = (props) => {
           }} 
               src={Icon1} alt="icon" className='
               absolute w-[40px] sm:w-[45px] md:w-[55px] lg:w-[60px] xl:w-[93px]
-              right-[5vw] top-[0vh]
-              ism:right-[10vw] ism:top-[0vh]
-              xsm:right-[10vw] xsm:top-[3vh]
+              right-[5vw] top-[7vh]
+              ism:right-[10vw] ism:top-[7vh]
+              xsm:right-[10vw] xsm:top-[7vh]
               sm:right-[10vw]
               md:left-[5vw] md:top-[-15vh]
               lg:top-[250px]
@@ -48,7 +54,7 @@ const Skills = (props) => {
           }} 
               src={Icon2} alt="icon" className='
               absolute w-[40px] sm:w-[45px] md:w-[55px] lg:w-[60px] xl:w-[93px]
-              left-[5vw] top-[550px] 
+              left-[5vw] top-[590px] 
               sm:right-[10vw]
               md:top-[-70px] md:right-[40px] md:left-[auto]
               '/>
@@ -75,7 +81,10 @@ const Skills = (props) => {
                 expData.map((elem,i)=>{
                   const {date, designation, company} = elem
                   return (
-                    <div key={designation} className='w-[240px] xl:w-[409px] sm:w-[300px] xxsm:w-[260px] lg:w-[390px]
+                    <div key={designation}  
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    className='w-[240px] xl:w-[409px] sm:w-[300px] xxsm:w-[260px] lg:w-[390px]
                     pl-[20px] xl:pl-[65px] pt-[20px] xl:pt-[56px] text-white absolute itemsBorderLeft
                     top-[0px]'>
                     <p className='text-[12px] xl:text-[16px] xl:leading-[21.82px] font-thin fontRegular leading-[30px]'>{date}</p>
@@ -107,7 +116,10 @@ const Skills = (props) => {
                 eduData.map((elem,i)=>{
                   const {date, deg, ins} = elem
                   return (
-                    <div key={deg} className='w-[240px] lg:w-[401px] xl:w-[577px] md:w-[380px] sm:w-[300px] xxsm:w-[260px]
+                    <div key={deg} 
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    className='w-[240px] lg:w-[401px] xl:w-[577px] md:w-[380px] sm:w-[300px] xxsm:w-[260px]
                     pr-[20px] md:pl-[20px] pt-[20px] xl:pt-[56px] xl:pl-[65px] text-white absolute itemsBorderLeft2
                     lg:top-[0px]
                     top-0

@@ -32,7 +32,10 @@ const Gallery = () => {
   return (
     <div className='w-full flex flex-col justify-center items-center pt-5 pb-5'>
         {/* Menus */}
-        <div className='w-full flex justify-center items-center'>
+        <div 
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        className='w-full flex justify-center items-center'>
             <div className='w-auto flex flex-wrap
             opacity-[0.9]
             font-[600] text-[#7983A4] text-[16px]
@@ -98,7 +101,7 @@ const Gallery = () => {
               <motion.div
               initial={{
                 x:-10,
-                opacity:0
+                opacity:1
                 
               }}
               animate={{
@@ -111,13 +114,17 @@ const Gallery = () => {
               }}
               transition={{
                 opacity: { ease: "linear" },
-                duration: 0.8
+                duration: 0.8,
+                delay: 1
               }}
               className='w-[260px] xxsm:w-[290px] xsm:w-[330px] sm:w-[400px]
               md:w-[320px] lg:w-[450px] xl:w-[636px] relative select-none
               portfolioCardHover'>
 
-                <img src={img} alt="img" 
+                <img
+                data-aos="zoom-in-up"
+                data-aos-duration="1200"
+                src={img} alt="img" 
                 className='w-full rounded-[15px] xl:rounded-[20px] object-contain'/>
                 {/* Hover effect */}
                 <div className='w-full h-0 absolute top-0 rounded-[15px]

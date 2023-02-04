@@ -4,6 +4,7 @@ import {TbSend} from 'react-icons/tb';
 import Person from '../../images/subscribe/person.png';
 import Mailbox from '../../images/subscribe/maillogo.png';
 import Mic from '../../images/subscribe/bgicon.png';
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
@@ -33,8 +34,14 @@ const Subscribe = (props) => {
   };
   return (
     <div className='w-full'>
-      <div className='w-[90vw] lg:w-[1000px] xl:w-[1316px] pt-[60px] mx-auto md:px-[60px] md:py-[100px] md:flex sibsCribgSmall relative'>
-        <div className='w-full'>
+      <div
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      className='w-[90vw] lg:w-[1000px] xl:w-[1316px] pt-[60px] mx-auto md:px-[60px] md:py-[100px] md:flex sibsCribgSmall relative'>
+        <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        className='w-full'>
         <Tittle tittle={props.tittle} text={props.text} color={props.color} bg={props.bg}/>
         {/* input form */}
         <div className='w-full pt-[20px] pb-[20px] md:pt-[30px] md:pb-[0] transition-all ease-linear duration-500'>
@@ -62,12 +69,25 @@ const Subscribe = (props) => {
         </div>
         {/* Images section */}
         <div className='w-full select-none'>
-          <div className='w-[250px] mx-auto h-[230px] md:h-full ism:h-[260px] relative'>
+          <div
+          data-aos="fade-right"
+          data-aos-duration="1200"
+          className='w-[250px] mx-auto h-[230px] md:h-full ism:h-[260px] relative'>
             <img src={Person} alt="icon" 
             className='w-[150px] ism:w-[160px] md:w-[200px] lg:w-[264px] absolute
             bottom-0 left-[10px] md:bottom-[-100px]
             lg:bottom-[-100px] lg:left-[-70px]'/>
-            <img src={Mailbox} alt="icon" 
+            <motion.img 
+            animate={{
+              y:[-2,4,-2],
+            }}
+            transition={{
+              type: 'spring',
+              stiffness:50,
+              duration:4.5,
+              repeat: Infinity
+            }}
+            src={Mailbox} alt="icon" 
             className='w-[130px] ism:w-[140px] md:w-[150px] lg:w-[auto] xl:w-[413px] xl:h-[202px] xl:object-cover absolute
             right-[-10px] top-[50px]
             ism:right-[-40px] ism:top-[70px]

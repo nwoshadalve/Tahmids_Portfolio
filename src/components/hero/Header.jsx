@@ -17,7 +17,7 @@ const Header = () => {
         hidden:{oppacity:0},
         visible: (i=1) =>({
             oppacity:1,
-            transition: {staggerChildren: 0.12, delayChildren: 0.07*i}
+            transition: {staggerChildren: 0.12, delayChildren: 0.07*i, }
         }),
     }
     const child ={
@@ -63,7 +63,8 @@ const Header = () => {
             animate={{x:0, opacity:1}}
             transition={{
                 type: "spring",
-                stiffness: 30
+                stiffness: 30,
+                delay: .2
             }}
         >Hi
         <motion.span
@@ -103,20 +104,9 @@ const Header = () => {
         </motion.h2>
       </div>
       {/* Additioinal Images */}
-        <motion.div
-        initial={{
-          y:-100,
-          opacity:0
-        }}
-        animate={{
-          y:0,
-          opacity:1
-        }}
-        transition={{
-          type: 'spring',
-          stiffness:50,
-          duration:5,
-        }}
+        <div
+        data-aos='zoom-in-up'
+        data-aos-duration="1500"
         className='w-full h-0 relative flex justify-around items-center select-none'>
         <motion.img 
         animate={{
@@ -128,7 +118,8 @@ const Header = () => {
           duration:5,
           repeat: Infinity
         }} 
-          src={Puzzle} alt="icon" className='absolute
+          src={Puzzle} alt="icon" 
+          className='absolute
           w-[45px] left-4 top-3
           sm:w-[50px] sm:left-[80px] sm:top-[20px]
           md:w-[65px]
@@ -152,22 +143,11 @@ const Header = () => {
           md:w-[65px] md:top-[140px]
           lg:w-[80px] lg:right-[15%]
           xl:w-[108px] xl:top-[200px] xl:right-[16vw]' />
-        </motion.div>
+        </div>
       {/* Animated Picture Section */}
-      <motion.div 
-      initial={{
-        y:-50,
-        opacity:0
-      }}
-      animate={{
-        y:0,
-        opacity:1
-      }}
-      transition={{
-        type: 'spring',
-        stiffness:50,
-        duration:10,
-      }}
+      <div 
+      data-aos="zoom-in"
+      data-aos-duration="1500"
       className='flex flex-col items-center justify-center 
       max-w-[373px] max-h-[371px]
       lg:max-w-[811px] lg:h-[534px]
@@ -185,7 +165,7 @@ const Header = () => {
         <img src={Carpet} alt="img" className='
         w-[150px] carpet
         absolute bottom-[-20px] left-14' />
-      </motion.div>
+      </div>
     </div>
   )
 }

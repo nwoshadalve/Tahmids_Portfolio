@@ -7,7 +7,10 @@ import icon from '../../images/footer/icon.png';
 
 const Footer = () => {
   return (
-  <footer className='w-full footerBg relative'>
+  <footer
+  data-aos="fade-up"
+  data-aos-duration="1200"
+  className='w-full footerBg relative'>
     <img src={icon} alt="icon" 
     className='w-[100px] lg:w-[200px] md:w-[150px] sm:w-[120px] absolute 
     top-[-10px] lg:top-[0px] sm:top-[-20px] 
@@ -18,23 +21,35 @@ const Footer = () => {
     <div className='w-full text-white'>
         {/* First Part */}
         <div className='w-full'>
-          <h1 className='w-[90vw] ism:w-[350px] sm:w-[480px] md:w-full mx-auto fontBold font-bold 
+          <h1
+          data-aos="fade-right"
+          data-aos-duration="1200"
+          className='w-[90vw] ism:w-[350px] sm:w-[480px] md:w-full mx-auto fontBold font-bold 
           text-[32px] sm:text-[42px] lg:text-[48px] 
           leading-[30.94px] sm:leading-[40px] lg:leading-[46.42px]
           text-center mb-[16px]
           '>Let’s build something together</h1>
-          <p className='w-[90vw] ism:w-[320px] sm:w-[440px] md:w-[650px] mx-auto 
+          <p 
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          className='w-[90vw] ism:w-[320px] sm:w-[440px] md:w-[650px] mx-auto 
           fontRegular text-[16px] leading-[21.82px] text-center
           font-normal mb-[44.72px]
           '>At Collax we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast efficiency</p>
-          <button className='w-[220px] h-[43.44px] md:w-[244px] md:h-[67px] mx-auto fontRegular text-[14.03px] md:text-[16px] leading-[13.57px] font-semibold
+          <button
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          className='w-[220px] h-[43.44px] md:w-[244px] md:h-[67px] mx-auto fontRegular text-[14.03px] md:text-[16px] leading-[13.57px] font-semibold
           footerBtn transition-all ease-in duration-500 origin-left
           '>Schedule a free call
               <RiCalendarCheckLine className='w-[20px] md:w-[25px] md:h-[25px] h-[20px] rounded-[5px] calendarHover opacity-80'></RiCalendarCheckLine>
           </button>
         </div>
         {/* Seond Part */}
-        <div className='w-full mt-[44.56px] md:mt-[100px] lg:flex lg:items-center lg:justify-around lg:px-[90px]'>
+        <div
+        data-aos="fade-right"
+        data-aos-duration="1200"
+        className='w-full mt-[44.56px] md:mt-[100px] lg:flex lg:items-center lg:justify-around lg:px-[90px]'>
           <div className='w-full lg:max-w-[670px]'>
             <p className='w-[269px] lg:w-[full] sm:w-[400px] md:w-full mx-auto lg:mx-0
             fontRegular text-[18px] leading-[24.55px]
@@ -51,11 +66,17 @@ const Footer = () => {
           </div>
         </div>
         {/* diveder */}
-        <div className='w-[90vw] xsm:w-[400px] md:w-[80vw] h-[1px] bg-[#656575] mx-auto my-[30px]'>
+        <div
+        data-aos="zoom-in"
+        data-aos-duration="1200"
+        className='w-[90vw] xsm:w-[400px] md:w-[80vw] h-[1px] bg-[#656575] mx-auto my-[30px]'>
 
         </div>
         {/* Third part */}
-        <div className='w-full md:px-[50px] md:flex md:justify-around'>
+        <div
+        data-aos="fade-right"
+        data-aos-duration="1200"
+        className='w-full md:px-[50px] md:flex md:justify-around'>
           <div className='w-full md:w-[175px] md:flex md:items-center'>
             <img className='mx-auto' src={Logo} alt="logo" />
           </div>

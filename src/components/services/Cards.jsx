@@ -27,7 +27,10 @@ const Cards = () => {
     <div className='w-full flex flex-col lg:flex-row justify-center items-center pt-[30px] md:pt-[44px] gap-5 xl:gap-10 select-none'>
       {
         cardInfo.map((item,i)=>(
-          <div key={i.toString()} className='w-[270px] xl:w-[410px] h-[330px] xl:h-[452px] 
+          <div key={i.toString()} 
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          className='w-[270px] xl:w-[410px] h-[330px] xl:h-[452px] 
           flex relative flex-col items-center xl:justify-center  
           px-6 py-8 xl:px-[42.5px] xl:py-0 
           border border-cardBorder rounded-[20px] xl:rounded-[24px] 

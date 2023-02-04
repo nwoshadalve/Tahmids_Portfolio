@@ -49,7 +49,10 @@ const Services = (props) => {
         {/* Section's Contents */}
         <div className=' w-full flex flex-col justify-center px-6 py-[60px] md:py-[100px]'>
         
-        <div className='w-full h-0 relative'>
+        <div
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+        className='w-full h-0 relative'>
         <motion.img 
         animate={{
           y:[-1,-8,-1],
@@ -71,7 +74,10 @@ const Services = (props) => {
           sm:left-[20px]
           ' src={SettingIcon} alt="icon" />
         </div>
-        <div className='w-full h-0 relative'>
+        <div 
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+        className='w-full h-0 relative'>
         <motion.img 
         animate={{
           y:[-2,7,-2],
@@ -97,9 +103,16 @@ const Services = (props) => {
         
         <div className='w-full'>
           {/* Texts */}
-          <HeadingTexts tittle={props.tittle} text={props.text} color={props.color} bg={props.bg}/>
+          <div 
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          className='w-full'>
+            <HeadingTexts tittle={props.tittle} text={props.text} color={props.color} bg={props.bg}/>
+          </div>
           {/* Card Section */}
-          <Cards/>
+          <div>
+            <Cards/>
+          </div>
         </div>
 
       </div>

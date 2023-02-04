@@ -9,7 +9,10 @@ import {motion,spring} from 'framer-motion';
 const Process = (props) => {
   return (
     <div className='w-full py-[60px] lg:py-[0px] lg:pt-[100px] lg:pb-[41px]'>
-      <div className='w-full select-none'>
+      <div
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      className='w-full select-none'>
         <HeadingTexts tittle={props.tittle} text={props.text} color={props.color} bg={props.bg}/>
       </div>
       <div className='w-full hidden lg:flex'>
